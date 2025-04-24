@@ -70,7 +70,7 @@ services:
 	  * Note that the root user should not be specified in the
         crontab, it will be removed if present
   * Add ssh keys and configuration to config/.ssh dir
-  
+
 ## Crontab example
 
 ```
@@ -90,4 +90,11 @@ Host *
 
 Host HOSTNAME
   IdentityFile ~/.ssh/KEYNAME
+```
+
+## Build and publish
+
+```shell
+export DOCKER_DEFAULT_PLATFORM=linux/amd64; docker build -t [USER]/rsnapshot .
+export DOCKER_DEFAULT_PLATFORM=linux/amd64 ; docker push [USER]/rsnapshot
 ```
