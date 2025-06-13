@@ -35,7 +35,7 @@ services:
       - TZ=Europe/London
     volumes:
       - </path/to/appdata/config>:/config
-	  - </path/to/backup_root>:/backup
+      - </path/to/backup_root>:/backup
     restart: unless-stopped
 ```
 
