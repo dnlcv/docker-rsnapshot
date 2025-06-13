@@ -95,6 +95,6 @@ Host HOSTNAME
 ## Build and publish
 
 ```shell
-export DOCKER_DEFAULT_PLATFORM=linux/amd64; docker build -t [USER]/rsnapshot .
-export DOCKER_DEFAULT_PLATFORM=linux/amd64 ; docker push [USER]/rsnapshot
+export DOCKER_DEFAULT_PLATFORM=linux/amd64; docker build docker build -t [USER]/rsnapshot:1.1 -t [USER]/rsnapshot:latest .
+export DOCKER_DEFAULT_PLATFORM=linux/amd64 ; docker push -a [USER]/rsnapshot
 ```
