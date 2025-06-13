@@ -1,0 +1,14 @@
+---
+version: "2"
+services:
+  rsnapshot:
+    image: dcampos/rsnapshot
+    container_name: rsnapshot
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Costa_Rica
+    volumes:
+      - /rsnapshot/config:/config
+      - /rsnapshot/data:/backup
+    restart: unless-stopped
