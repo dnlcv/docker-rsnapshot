@@ -3,7 +3,7 @@ FROM lsiobase/alpine:3.21
 
 # Copy configuration files from local root directory to container
 # This includes service configurations and log rotation settings
-COPY files /root/
+COPY files /
 
 # Environment variables for container configuration
 # TZ: Timezone setting (defaults to UTC)
